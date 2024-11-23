@@ -50,13 +50,13 @@ function ProjectCard({ project }) {
             <span className="mr-2 text-pink-500">const</span>
             <span className="mr-2 text-white">project</span>
             <span className="mr-2 text-pink-500">=</span>
-            <span className="text-gray-400">{'{'}</span>
+            <span className="text-gray-400">{& apos;{& apos;}</span>
           </div>
           <div>
             <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
-            <span className="text-gray-400">'</span>
+            <span className="text-gray-400">&apos;</span>
             <span className="text-amber-300">{project.name}</span>
-            <span className="text-gray-400">',</span>
+            <span className="text-gray-400">&apos;,</span>
           </div>
           <div>
             <span className="ml-4 lg:ml-8 mr-2 text-white">tools:</span>
@@ -77,7 +77,7 @@ function ProjectCard({ project }) {
             <span className="ml-4 lg:ml-8 mr-2 text-white">description:</span>
             <span className="text-cyan-400">'{project.description}'</span>,
           </div>
-          <div className="text-gray-400">{'};'}</div>
+          <div className="text-gray-400">{& apos;};&apos;}</div>
         </code>
       </div>
     </div>
