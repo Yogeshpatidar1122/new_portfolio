@@ -72,6 +72,9 @@ import vuetifyjs from '/public/svg/skills/vuetifyjs.svg';
 import webix from '/public/svg/skills/webix.svg';
 import wolframalpha from '/public/svg/skills/wolframalpha.svg';
 import wordpress from '/public/svg/skills/wordpress.svg';
+import github from '/public/svg/skills/github.svg';
+import node from '/public/svg/skills/node.svg';
+
 
 
 export const skillsImage = (skill) => {
@@ -97,6 +100,8 @@ export const skillsImage = (skill) => {
       return angular;
     case 'javascript':
       return javascript;
+    case 'node':
+      return node;
     case 'next js':
       return nextJS;
     case 'nuxt js':
@@ -171,6 +176,8 @@ export const skillsImage = (skill) => {
       return gimp;
     case 'git':
       return git;
+    case 'github':
+      return github;
     case 'graphql':
       return graphql;
     case 'lightroom':

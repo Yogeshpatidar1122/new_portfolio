@@ -7,7 +7,7 @@ export const personalData = {
   phone: '8827054933',
   address: 'Sonkatch ,Dewas, (M.P.) - 455118 ',
   github: 'https://github.com/yogeshpatidar1122',
-  facebook: 'https://www.facebook.com/abusaid.riyaz/',
+  Vercel: 'https://vercel.com/yogesh-patidars-projects',
   linkedIn: 'https://www.linkedin.com/in/yogeshpatidar340/',
   devUsername: "Yogeshpatidar",
   resume: '/Resume yogesh patidar.pdf'
