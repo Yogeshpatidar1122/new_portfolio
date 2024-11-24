@@ -49,7 +49,7 @@ const GlowCard = ({ children, identifier }) => {
         }
       };
 
-      document.body.addEventListener('pointermove', UPDATE);
+      // document.body.addEventListener('pointermove', UPDATE);
 
       const RESTYLE = () => {
         if (CONTAINER) {
@@ -68,7 +68,7 @@ const GlowCard = ({ children, identifier }) => {
 
       // Cleanup event listener on component unmount
       return () => {
-        document.body.removeEventListener('pointermove', UPDATE);
+        // document.body.removeEventListener('pointermove', UPDATE);
       };
     }
   }, [identifier]);
