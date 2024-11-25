@@ -1,11 +1,7 @@
-'use client';  // This ensures the code runs only on the client
-
-import { useEffect } from 'react';
-
-const GlowCard = ({ children, identifier }) => {
-  useEffect(() => {
-    // Ensure the document object is only accessed on the client-side
-    if (typeof document !== 'undefined') {
+useEffect(() => {
+  // Ensure this code runs only in the browser
+  if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+    try {
       const CONTAINER = document.querySelector(`.glow-container-${identifier}`);
       const CARDS = document.querySelectorAll(`.glow-card-${identifier}`);
 
@@ -70,17 +66,8 @@ const GlowCard = ({ children, identifier }) => {
       return () => {
         document.body.removeEventListener('pointermove', UPDATE);
       };
+    } catch (error) {
+      console.error('Error in GlowCard useEffect:', error.message);
     }
-  }, [identifier]);
-
-  return (
-    <div className={`glow-container-${identifier} glow-container`}>
-      <article className={`glow-card glow-card-${identifier} h-fit cursor-pointer border border-[#2a2e5a] transition-all duration-300 relative bg-[#101123] text-gray-200 rounded-xl hover:border-transparent w-full`}>
-        <div className="glows"></div>
-        {children}
-      </article>
-    </div>
-  );
-};
-
-export default GlowCard;
+  }
+}, [identifier]);
