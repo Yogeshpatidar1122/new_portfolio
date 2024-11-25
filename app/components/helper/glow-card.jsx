@@ -35,7 +35,7 @@ const GlowCard = ({ children, identifier }) => {
 
           const CARD_CENTER = [
             CARD_BOUNDS.left + CARD_BOUNDS.width * 0.5,
-            CARD_BOUNDS.top + CARD_Bounds.height * 0.5,
+            CARD_BOUNDS.top + CARD_BOUNDS.height * 0.5,
           ];
 
           let ANGLE =
