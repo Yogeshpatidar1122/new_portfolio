@@ -65,14 +65,14 @@ const GlowCard = ({ children, identifier }) => {
             }
         };
 
-        // // Add event listener to handle mouse movement
-        // document.body.addEventListener("pointermove", handlePointerMove);
-        // applyStyles();
+        // Add event listener to handle mouse movement
+        document.body.addEventListener("pointermove", handlePointerMove);
+        applyStyles();
 
-        // // Cleanup the event listener when the component is unmounted
-        // return () => {
-        //     document.body.removeEventListener("pointermove", handlePointerMove);
-        // };
+        // Cleanup the event listener when the component is unmounted
+        return () => {
+            document.body.removeEventListener("pointermove", handlePointerMove);
+        };
     }, []); // Empty dependency array ensures this only runs on mount and unmount
 
     return (
